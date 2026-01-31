@@ -10,6 +10,7 @@ export const NavBar = ({ theme, setTheme }) => {
         alt="logo"
       />
       <div className="text-gray-700 dark:text-white sm:text-sm max-sm:w-60 max-sm:pl-10 max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all">
+      <img src={assets.close_icon} alt="close icon" className="absolute w-5 right-4 sm:hidden" />
         <a href="#" className="sm:hover:border-b">
           Home
         </a>
@@ -24,7 +25,12 @@ export const NavBar = ({ theme, setTheme }) => {
         </a>
       </div>
       <div className="div">
-        <a href="#" className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer transition-all">Contact us <img src={assets.arrow_icon} width={14} alt="arrow icon" /></a>
+        <a
+          href="#"
+          className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer transition-all"
+        >
+          Contact us <img src={assets.arrow_icon} width={14} alt="arrow icon" />
+        </a>
       </div>
     </div>
   );
