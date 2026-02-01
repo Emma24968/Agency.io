@@ -16,7 +16,8 @@ export const NavBar = ({ theme, setTheme }) => {
         <img
           src={assets.close_icon}
           alt="close icon"
-          className="absolute w-5 right-4 sm:hidden" onClick={()=>setSideBarOpen(false)}
+          className="absolute w-5 right-4 top-3 sm:hidden"
+          onClick={() => setSideBarOpen(false)}
         />
         <a
           href="#"
@@ -25,15 +26,26 @@ export const NavBar = ({ theme, setTheme }) => {
         >
           Home
         </a>
-        <a href="#" className="sm:hover:border-b">
+        <a
+          onClick={() => setSideBarOpen(false)}
+          href="#"
+          className="sm:hover:border-b"
+        >
           Services
         </a>
-        <a href="#" className="sm:hover:border-b">
+        <a
+          onClick={() => setSideBarOpen(false)}
+          href="#"
+          className="sm:hover:border-b"
+        >
           Our Work
         </a>
-        <a href="#" className="sm:hover:border-b">
-          Contact Us
-        </a>
+        <a
+          onClick={() => setSideBarOpen(false)}
+          href="#"
+          className="sm:hover:border-b"
+        >
+Testimonial        </a>
       </div>
       <div className="flex items-center gap-2 sm:gap-4">
         <img
