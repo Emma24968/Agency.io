@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import assets from "../assets/assets";
+import Theme from "./Theme";
 
 export const NavBar = ({ theme, setTheme }) => {
   const [sideBarOpen, setSideBarOpen] = useState(false);
@@ -56,10 +57,11 @@ Testimonial        </a>
         />
         <a
           href="#"
-          className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer transition-all"
+          className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-black px-6 py-2 rounded-full cursor-pointer transition-all"
         >
           Contact us <img src={assets.arrow_icon} width={14} alt="arrow icon" />
         </a>
+      <Theme />
       </div>
     </div>
   );

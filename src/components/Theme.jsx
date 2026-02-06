@@ -1,10 +1,10 @@
 import React from 'react'
 import assets from '../assets/assets'
 
-const Theme = () => {
+const Theme = ({theme}) => {
   return (
-    <div>
-        <img src={assets.moon_icon} alt="moon icon" />
+    <div className='border-primary cursor-pointer rounded text-primary'>
+        <img src={theme ==='dark'? assets.moon_icon : assets.moon_icon} alt="moon icon" />
     </div>
   )
 }
