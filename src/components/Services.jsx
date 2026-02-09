@@ -1,19 +1,16 @@
 import React from 'react'
-import assets from '../assets/assets'
+import { company_logos } from '../assets/assets'
+
+// import googleLogo from '../assets/google_logo.svg'
+// import rakuten from '../assets/assets/rakuten_logo'
 
 export default function Services() {
   return (
     <div>
         <p>Trusted by Leading Companies</p>
-        <div>
-
-        <img src={assets.content_icon} alt="" />
-        <img src={assets.zoom_logo.png} alt="" />
-        <img src={assets.rakuten_logo.png} alt="" />
-        <img src={assets} alt="" />
-        <img src={assets} alt="" />
-        <img src={assets} alt="" />
-        </div>
+        <div>{company_logos.map((logo,index)=>(
+          <img src={logo} key={index} alt="" />
+        ))}</div>
     </div>
   )
 }
