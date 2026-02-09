@@ -10,8 +10,8 @@ export default function Hero() {
       </button>
       <h1 className="font-bold text-5xl">Turning imagination into<p><span>digital </span>impact</p></h1>
       <h5>Creating meaning connections and turning big ideas <p>into interactive digital experiences.</p></h5>
-      <img src={assets.bgImage1} alt="gradient color" className="absolute " />
-      <img src={assets.hero_img} alt="hero image" />
+      <img src={assets.bgImage1} alt="gradient color" className="absolute top-0 left- " />
+      <img src={assets.hero_img} alt="hero image" width={800} className="z-10" />
     </div>
   );
 }
