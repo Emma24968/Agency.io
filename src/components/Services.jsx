@@ -1,5 +1,6 @@
 import React from "react";
 import assets, { company_logos } from "../assets/assets";
+import Category from "./Category";
 export default function Services() {
   return (
     <div>
@@ -13,18 +14,12 @@ export default function Services() {
         </div>
         <div className="flex flex-col items-center text-center">
           <p className="font-bold text-3xl mt-30">How can we help?</p>
-          <p>
+          <h5>
             From strategy to execution,we craft digital solutions that move{" "}
             <p>your business forward</p>
-          </p>
+          </h5>
         </div>
-        <div className="flex">
-          <img src={assets.ads_icon} alt="" />
-          <div>
-            <h5>Advertising</h5>
-            <p>We turn bold ideas into digital content that engage.</p>
-          </div>
-        </div>
+          <Category />
       </div>
     </div>
   );
