@@ -40,6 +40,29 @@ export const company_logos = [
   google_logo,
 ]
 
+export const category=[
+  {
+    title:'Advertising',
+    image: ads_icon,
+    description:'We turn bold ideas into digital content that engage.'
+  },
+  {
+    title:'Social Media',
+    image: social_icon,
+    description:'We turn bold ideas into digital content that engage.'
+  },
+  {
+    title:'Content Writing',
+    image: marketing_icon,
+    description:'We turn bold ideas into digital content that engage.'
+  },
+  {
+    title:'Content Marketing',
+    image: content_icon,
+    description:'We turn bold ideas into digital content that engage.'
+  },
+]
+
 const assets = {
   logo,
   arrow_icon,

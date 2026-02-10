@@ -1,6 +1,6 @@
 import React from "react";
 import assets, { company_logos } from "../assets/assets";
-import Category from "./Category";
+import { category } from "../assets/assets";
 export default function Services() {
   return (
     <div>
@@ -19,7 +19,19 @@ export default function Services() {
             <p>your business forward</p>
           </h5>
         </div>
-          <Category />
+        {category.map((categories, index) => {
+          return (
+            <div className="flex border bg-white z-50 p-4" key={index}>
+              <div className="border-6 rounded-full border-gray-200 ">
+                <img src={categories.image} alt="" />
+              </div>
+              <div>
+                <h5>{categories.title}</h5>
+                <p>{categories.description}</p>
+              </div>{" "}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
