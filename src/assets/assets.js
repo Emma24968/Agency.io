@@ -39,7 +39,23 @@ export const company_logos = [
   airbnb_logo,
   google_logo,
 ]
-
+export const portfolio=[
+  {
+    image:work_mobile_app,
+    title:'Mobile app marketing',
+    description:'We turn bold ideas into digital solutions that connects...'
+  },
+  {
+    image:work_dashboard_management,
+    title:'Dashboard management',
+    description:'We turn bold ideas into digital solutions that connects...'
+  },
+  {
+    image:work_fitness_app,
+    title:'Fitness app promotion',
+    description:'We turn bold ideas into digital solutions that connects...'
+  },
+]
 export const category=[
   {
     title:'Advertising',
