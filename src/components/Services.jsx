@@ -19,8 +19,9 @@ export default function Services() {
         <div className="flex flex-col items-center text-center">
           <p className="font-bold text-3xl mt-30">How can we help?</p>
           <h5>
-            From strategy to execution,we craft digital solutions that move{" "}
-            <p>your business forward</p>
+            From strategy to execution,we craft digital solutions that move
+            <br />
+            your business forward
           </h5>
         </div>
         <div className="grid grid-cols-2 gap-6 mt-8">
@@ -30,7 +31,7 @@ export default function Services() {
               className="flex gap-2 shadow-lg border-transparent border-1 hover:border-gray-100  bg-white z-50 p-4 rounded-lg "
             >
               <div className="border-2 rounded-full border-gray-200 items-center">
-                <img src={categories.image}  alt={categories.title} />
+                <img src={categories.image} alt={categories.title} />
               </div>
 
               <div className="x-10">

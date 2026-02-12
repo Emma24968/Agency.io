@@ -3,6 +3,7 @@ import { NavBar } from './components/NavBar'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import Portfolio from './components/Portfolio'
+import Team from './components/Team'
 
 const App = () => {
   const [theme,setTheme]=useState('light')
@@ -12,6 +13,7 @@ const App = () => {
       <Hero />
       <Services />
       <Portfolio />
+      <Team />
     </div>
   )
 }
